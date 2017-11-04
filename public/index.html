@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+   
+    <script src="app.js"></script>
+    <style>.active { color: red; font-weight: bold }</style>
+  </head>
+  
+  <body ng-app="helloworld">
+    <a ui-sref="One" ui-sref-active="active">One</a>
+    <a ui-sref="Two" ui-sref-active="active">Two</a>
+    
+    <ui-view></ui-view>
+  </body> 
+<script src="./onecontroller.js"></script>
+<script src="./twocontroller.js"></script>
+
+</html>
